@@ -1,0 +1,8 @@
+body{
+    font-size: x-large;
+    background-image: url(P6.jpg);
+    color: rgb(243, 247, 250);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}

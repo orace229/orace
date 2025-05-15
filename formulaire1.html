@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+    content="width=c, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+ <head>
+<title>Bienvenue sur mon site !</title>
+<meta http-equiv="Content-Type"content="text/html;charset=utf-8"/>
+</head>
+<body>
+<label>Votre pseudo</label> : <input type="texte" name="pseudo" id="pseudo" value="M@teo21" size="30" maxlength="10"/>
+</p>
+<p>
+<label for="pass">Votre mot de passe :</label>
+<input type="password" name="pass" id="pass" />
+</p>
+<p>
+<label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon site ?</label><br />
+<textarea name="améliorer" id="améliorer" rowx="10" cols="50"></textarea>
+</p>
+<p>Texte après le formulaire</p>
+<p>
+Cochez les aliments que vous aimez manger :<br />
+<input type="checkbox" name="frites" id="frites" /> <label for="frites">Frites</label><br />
+<input type="checkbox" name="streak" id="streak" /> <label for="streak">Steak haché</label><br />
+<input type="checkbox" name="epinards" id="epinards" checked="checked"/> <label for="epinards">Epinards</label><br />
+<input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">Huitres</label>
+</p>
+<p>
+Veuillez indiquer la tranche d"âge dans laquelle vous vous situez :<br />
+<input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br /> 
+<input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br /> 
+<input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br /> 
+<input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?</label>
+</p>
+</form>
+<form method="post" action="traitement.php"> 
+<p> 
+<label for="pays">Dans quel pays habitez-vous ?</label><br /> 
+<select name="pays" id="pays"> 
+<optgroup label="Europe"> 
+<option value="france">France</option> 
+<option value="espagne">Espagne</option> 
+<option value="italie">Italie</option> 
+<option value="royaume-uni">Royaume-Uni</option> 
+</optgroup> 
+<optgroup label="Amérique"> 
+<option value="canada">Canada</option> 
+<option value="etats-unis">Etats-Unis</option> 
+</optgroup> 
+<optgroup label="Asie"> 
+<option value="chine">Chine</option> 
+<option value="japon">Japon</option> 
+</optgroup> 
+</select> 
+</p> 
+</form>
+<fieldset> 
+<legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+ 
+<label for="nom">Quel est votre nom ?</label><br /> 
+<input type="text" name="nom" id="nom" tabindex="10" /><br /> 
+ 
+<label for="prenom">Quel est votre prénom ?</label><br /> 
+<input type="text" name="prenom" id="prenom" tabindex="20" /><br /> 
+ 
+<label for="email">Quel est votre e-mail ?</label><br /> 
+<input type="text" name="email" id="email" tabindex="30" /><br /> 
+</fieldset> 
+ 
+<fieldset> 
+<legend>Votre souhait</legend> <!-- Titre du fieldset --> 
+ 
+<p> 
+Faites un souhait que vous voudriez voir exaucé :<br /> 
+<input type="radio" name="souhait" value="riche" id="riche" tabindex="40" /> <label for="riche">Etre 
+riche</label><br /> 
+<input type="radio" name="souhait" value="celebre" id="celebre" tabindex="50" /> <label 
+for="celebre">Etre célèbre</label><br /> 
+<input type="radio" name="souhait" value="intelligent" id="intelligent" tabindex="60" /> <label 
+for="intelligent">Etre <strong>encore</strong> plus intelligent</label><br /> 
+<input type="radio" name="souhait"    value="autre" id="autre" tabindex="70" /> <label 
+for="autre">Autre...</label><br /> 
+</p> 
+ 
+<p> 
+<label for="precisions">Si "Autre", veuillez préciser :</label><br    /> 
+<textarea name="precisions" id="precisions" cols="40" rows="4" tabindex="80"></textarea> 
+</p> 
+</fieldset> 
+<p> 
+<input type="submit" /> <input type="reset" /> 
+</p> 
+</form>
+</body>
+</html>
